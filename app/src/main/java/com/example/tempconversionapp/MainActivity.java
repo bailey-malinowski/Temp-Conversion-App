@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String word = input1.getText().toString();
                 double num = Double.parseDouble(word);
-                double conv = (num*(9/5))+32; //to fahrenheit
+                double conv = (num*(9/5.0))+32; //to fahrenheit
                 String out = Double.toString(conv);
                 outputText1.setText(out);
             }
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String word = input2.getText().toString();
                 double num2 = Double.parseDouble(word);
-                double conv2 = (num2-32)*(5/9); // to celsius
+                double conv2 = (num2-32)*(5/9.0); // to celsius
                 String out2 = Double.toString(conv2);
                 outputText2.setText(out2);
 
