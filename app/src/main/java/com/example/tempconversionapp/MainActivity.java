@@ -25,28 +25,27 @@ public class MainActivity extends AppCompatActivity {
         input2 = findViewById(R.id.tempEnter2);
         outputText1  = findViewById(R.id.output1);
         outputText2 = findViewById(R.id.output2);
-        button1 = findViewById(R.id.button2);
+        button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
 
 
 
-
-        button1.setOnClickListener(new View.OnClickListener(){
+        button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                String s = input1.getText().toString();
-                double num = Double.parseDouble(s);
+                String word = input1.getText().toString();
+                double num = Double.parseDouble(word);
                 double conv = (num*(9/5))+32; //to fahrenheit
                 String out = Double.toString(conv);
                 outputText1.setText(out);
             }
         });
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ///conversion math here
                 String word = input2.getText().toString();
                 double num2 = Double.parseDouble(word);
-                double conv2 = (num2)*(5/9)-32;
+                double conv2 = (num2-32)*(5/9); // to celsius
                 String out2 = Double.toString(conv2);
                 outputText2.setText(out2);
 

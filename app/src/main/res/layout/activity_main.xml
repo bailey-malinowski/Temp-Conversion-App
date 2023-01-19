@@ -5,6 +5,7 @@
     android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BBA3E6"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,30 +14,33 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="250dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="In Fahrenheit:"
         android:textColor="#050404"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/celcius" />
+        app:layout_constraintTop_toBottomOf="@+id/celsius" />
 
     <TextView
         android:id="@+id/temperatureConversions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="cursive"
         android:text="Temperature Conversions"
-        android:textColor="#000000"
+        android:textColor="#011E09"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/celcius"
+        android:id="@+id/celsius"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="In Celcius:"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -48,6 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="116dp"
+        android:backgroundTint="#2D105F"
         android:text="Convert"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
@@ -73,8 +78,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
+        android:backgroundTint="#2D105F"
         android:text="Convert"
-        app:iconTint="#3F51B5"
+        app:iconTint="#2D105F"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,24 +90,24 @@
         android:id="@+id/tempEnter1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
         android:inputType="number"
-        android:text="enter number"
+        android:text="enter temp"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/celcius"
+        app:layout_constraintStart_toEndOf="@+id/celsius"
         app:layout_constraintTop_toBottomOf="@+id/temperatureConversions" />
 
     <EditText
         android:id="@+id/tempEnter2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
         android:ems="10"
         android:inputType="number"
-        android:text="enter number"
+        android:text="enter temp"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/fahrenheit"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
